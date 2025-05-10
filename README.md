@@ -26,30 +26,24 @@ git clone https://github.com/QuaQuytNgot/360vprep.git
 cd 360vprep
 ```
 
-### 3. (Optional) Trim the Input Video
+### 3. (Optional) Trim the Input Video and Convert into .yuv file
 
-If you want to trim a specific segment of your video:
+To trim and convert into .yuv file, run:
 
 ```bash
-ffmpeg -ss 00:00:30.0 -i input.webm -t 00:00:10.0 output.webm
+bash trim_and_convert.sh
 ```
-
-This command starts at 30 seconds into the input and extracts a 10-second clip.
+The .yuv file will be stored in $vname/yuv_file/
 
 ### 4. Tile the Video
-
-Create a folder to store raw YUV files and convert the video:
-
-```bash
-mkdir yuv_file
-ffmpeg -y -i input.webm -pix_fmt yuv420p yuv_file/output.yuv
-```
 
 Then run the tiling script:
 
 ```bash
 perl split_erp_tiles.pl
 ```
+
+The tiling file will be stored in $vname/erp_mxn/$vname_number/ 
 
 ### 5. Encode with HEVC
 
@@ -78,4 +72,3 @@ Check the results of each encoding layer under:
 ## 📬 Contact
 
 For questions or contributions, please open an issue or submit a pull request on GitHub.
-
