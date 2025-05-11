@@ -8,8 +8,8 @@ my $input_dir = "$vname/yuv_file";
 
 my $W_yuv = 3840;
 my $H_yuv = 1920;
-my $No_tile_W = 4;   # change here
-my $No_tile_H = 3;   # change here
+my $No_tile_W = 4;   # change here, W: Cols
+my $No_tile_H = 3;   # change here, H: Rows
 my $No_tile = $No_tile_W * $No_tile_H;
 my $W_tile = $W_yuv / $No_tile_W;
 my $H_tile = $H_yuv / $No_tile_H;
