@@ -1,10 +1,10 @@
-## 📽️ Overview
+## Overview
 
 **360vprep** is a content preparation pipeline for 360-degree video streaming. It supports key processes such as video tiling, ERP (Equirectangular Projection) handling, HEVC encoding, and provides a step-by-step tutorial to help you through the entire workflow.
 
 ---
 
-## ⚙️ How to Use
+##  How to Use
 
 Before getting started, replace `{input}` and `{output}` with the actual names of your video files.
 
@@ -61,7 +61,7 @@ Check the results of each encoding layer under:
 
 ---
 
-## 🧾 Notes
+## Notes
 
 - Make sure your input video is in equirectangular projection format.
 - You can customize the tiling structure (e.g., 6x4 tiles) in the Perl and shell scripts.
@@ -69,6 +69,6 @@ Check the results of each encoding layer under:
 
 ---
 
-## 📬 Contact
+## Contact
 
 For questions or contributions, please open an issue or submit a pull request on GitHub.
